@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books of the Commission - Winners Teens Osimore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#f5c542',
+                        maroon: '#800000',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .nav-link:hover {
+            color: #f5c542;
+        }
+
+        .nav-link.active {
+            color: #f5c542;
+            border-bottom: 2px solid #f5c542;
+        }
+
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: white;
+            color: #800000;
+        }
+    </style>
+</head>
+
+<body class="font-inter bg-black text-white">
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-maroon to-maroon/90 text-white fixed w-full z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 md:px-12">
+
+            <!-- Logo + Text -->
+            <div class="flex items-center space-x-3">
+                <img src="assets/winners_logo-removebg-preview.png" alt="Winners Chapel Logo" class="h-10 w-auto">
+                <span class="text-2xl font-bold">
+                    <span class="text-gold">Teens</span> <span class="text-white">Church</span>
+                </span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="mandate.html" class="nav-link">Our Mandate</a>
+                <a href="mission.html" class="nav-link">Our Mission</a>
+                <a href="books.html" class="nav-link active">Books</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <i data-feather="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="h-64 md:h-80 bg-gradient-to-b from-maroon to-black flex items-center justify-center text-center">
+        <div class="px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-gold">Books of the Commission</h1>
+            <p class="mt-4 text-gray-300">Inspirational books by Bishop David Oyedepo & other anointed ministers</p>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section class="py-16 px-4 md:px-8 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Explore Our Books</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="bg-gray-800 p-6 rounded-lg text-center hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold text-gold mb-4">Keys to Divine Health</h3>
+                    <p class="mb-6">A revelation on God’s plan for healthy living.</p>
+                    <a href="Keys-to-divine-health.html"
+                        class="btn-primary inline-block bg-gold text-maroon font-semibold py-2 px-6 rounded-full">Read
+                        More</a>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg text-center hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold text-gold mb-4">Understanding Divine Direction</h3>
+                    <p class="mb-6">Discover how to walk in God’s plan for your life.</p>
+                    <a href="divine-direction.html"
+                        class="btn-primary inline-block bg-gold text-maroon font-semibold py-2 px-6 rounded-full">Read
+                        More</a>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg text-center hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold text-gold mb-4">Conquering Controlling Powers</h3>
+                    <p class="mb-6">Learn how faith produces outstanding results.</p>
+                    <a href="conquering-controlling-powers.html"
+                        class="btn-primary inline-block bg-gold text-maroon font-semibold py-2 px-6 rounded-full">Read
+                        More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold">Winners Teens Osimore</h3>
+                    <p>Empowering teenagers with divine wisdom and knowledge for victorious living.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gold">Home</a></li>
+                        <li><a href="mandate.html" class="hover:text-gold">Our Mission</a></li>
+                        <li><a href="mission.html" class="hover:text-gold">Our Mission</a></li>
+                        <li><a href="books.html" class="hover:text-gold">Books</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/lfcijebuodeteens?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-maroon"><i
+                                data-feather="instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-maroon"><i
+                                data-feather="facebook"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-maroon"><i
+                                data-feather="youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800 text-center">
+                <p>&copy; 2025 Winners Teens Osimore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

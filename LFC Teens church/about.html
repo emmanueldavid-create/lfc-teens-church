@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Teens Church</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#f5c542',
+                        maroon: '#800000',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-inter bg-black text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-maroon to-maroon/90 text-white fixed w-full z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 md:px-12">
+
+            <!-- Logo + Text -->
+            <div class="flex items-center space-x-3">
+                <img src="assets/winners_logo-removebg-preview.png" alt="Winners Chapel Logo" class="h-10 w-auto">
+                <span class="text-2xl font-bold">
+                    <span class="text-gold">Teens</span> <span class="text-white">Church</span>
+                </span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-white font-medium">
+                <a href="index.html" class="nav-link hover:text-gold">Home</a>
+                <a href="mandate.html" class="nav-link hover:text-gold">Our Mandate</a>
+                <a href="vision.html" class="nav-link hover:text-gold">Our Vision</a>
+                <a href="mission.html" class="nav-link hover:text-gold">Our Mission</a>
+                <a href="about.html" class="nav-link text-gold border-b-2 border-gold">About Us</a>
+                <a href="books.html" class="nav-link hover:text-gold">Books</a>
+                <a href="gallery.html" class="nav-link hover:text-gold">Gallery</a>
+                <a href="contact.html" class="nav-link hover:text-gold">Contact</a>
+            </div>
+            <div class="md:hidden text-white">
+                <i data-feather="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<section class="h-[36rem] bg-cover bg-top flex items-center justify-center relative"
+    style="background-image: url('./assets/lfc6.jpg')">
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+    <!-- Text -->
+    <div class="relative text-center max-w-3xl px-6">
+        <h1 class="text-5xl font-bold text-gold">About Us</h1>
+        <p class="mt-4 text-lg text-white">
+            Worthy Ambassadors of Christ, shining His light to our world.
+        </p>
+    </div>
+</section>
+
+
+    <!-- Content -->
+    <section class="py-16 px-6 md:px-16 bg-maroon text-white">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <p class="text-lg leading-relaxed">
+                We are a people of grace, glory, and power set to shake the world for Jesus, and represent Him as Worthy
+                Ambassadors of the Kingdom.
+            </p>
+            <p class="text-lg leading-relaxed">
+                As Kingdom Ambassadors, we represent Christ in deed and character, made worthy of our calling as we grow
+                and
+                aspire for excellence, in atmosphere of worship, praise, and soul-lifting encounters that pervade our
+                services.
+            </p>
+            <p class="text-lg leading-relaxed">
+                <span class="text-gold font-semibold">Matthew 6:33</span> drives our conviction as we seek first the
+                things of
+                God's kingdom, so that all other wonderful things are added to us in our glorious journey.
+            </p>
+            <p class="text-lg leading-relaxed">
+                We are happy to receive you and welcome you to our midst to enjoy the warmth and fellowship under
+                Christ's love.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-maroon py-12 px-4 md:px-8 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold">Teens Church</h3>
+                    <p>Empowering teenagers with divine wisdom and knowledge for victorious living.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gold">Home</a></li>
+                        <li><a href="mandate.html" class="hover:text-gold">Our Mandate</a></li>
+                        <li><a href="vision.html" class="hover:text-gold">Our Vision</a></li>
+                        <li><a href="mission.html" class="hover:text-gold">Our Mission</a></li>
+                        <li><a href="about.html" class="hover:text-gold">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/lfcijebuodeteens?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            class="w-10 h-10 rounded-full bg-gold flex items-center justify-center hover:bg-white hover:text-maroon">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gold flex items-center justify-center hover:bg-white hover:text-maroon">
+                            <i data-feather="facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gold text-center">
+                <p>&copy; 2025 Teens Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winners Teens Osimore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#f5c542',
+                        maroon: '#800000',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(128, 0, 0, 0.85);
+        }
+
+        .nav-link:hover {
+            color: #f5c542;
+        }
+
+        .nav-link.active {
+            color: #f5c542;
+            border-bottom: 2px solid #f5c542;
+        }
+
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: white;
+            color: #800000;
+        }
+    </style>
+</head>
+
+
+<body class="font-inter bg-white text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-maroon to-maroon/90 text-white fixed w-full z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 md:px-12">
+
+            <!-- Logo + Text -->
+            <div class="flex items-center space-x-3">
+                <img src="assets/winners_logo-removebg-preview.png" alt="Winners Chapel Logo" class="h-10 w-auto">
+                <span class="text-2xl font-bold">
+                    <span class="text-gold">Teens</span> <span class="text-white">Church</span>
+                </span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link ">Home</a>
+                <a href="mandate.html" class="nav-link">Our Mandate</a>
+                <a href="mission.html" class="nav-link">Our Mission</a>
+                <a href="books.html" class="nav-link">Books</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+        </div>
+        <div class="md:hidden">
+            <i data-feather="menu"></i>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-maroon text-white py-24 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
+            <p class="text-lg text-gray-200">We’d love to hear from you! Connect with us anytime.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="py-16 px-6 md:px-16">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+            <!-- Phone -->
+            <div class="bg-maroon text-white rounded-lg shadow-lg p-8 hover:scale-105 transition">
+                <i data-feather="phone" class="w-10 h-10 mx-auto mb-4 text-gold"></i>
+                <h3 class="text-xl font-bold text-gold mb-2">Call Us</h3>
+                <p>+234 800 000 0000</p>
+            </div>
+
+            <!-- Email -->
+            <div class="bg-maroon text-white rounded-lg shadow-lg p-8 hover:scale-105 transition">
+                <i data-feather="mail" class="w-10 h-10 mx-auto mb-4 text-gold"></i>
+                <h3 class="text-xl font-bold text-gold mb-2">Email</h3>
+                <p>info@winnersosimore.org</p>
+            </div>
+
+            <!-- Address -->
+            <div class="bg-maroon text-white rounded-lg shadow-lg p-8 hover:scale-105 transition">
+                <i data-feather="map-pin" class="w-10 h-10 mx-auto mb-4 text-gold"></i>
+                <h3 class="text-xl font-bold text-gold mb-2">Visit Us</h3>
+                <p>Winners Chapel, Osimore, Nigeria</p>
+            </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="text-center mt-12">
+            <h3 class="text-2xl font-bold text-maroon mb-6">Connect With Us</h3>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.instagram.com/lfcijebuodeteens?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    class="w-12 h-12 rounded-full bg-gold flex items-center justify-center hover:bg-maroon hover:text-white transition">
+                    <i data-feather="instagram"></i>
+                </a>
+                <a href="#"
+                    class="w-12 h-12 rounded-full bg-gold flex items-center justify-center hover:bg-maroon hover:text-white transition">
+                    <i data-feather="facebook"></i>
+                </a>
+                <a href="#"
+                    class="w-12 h-12 rounded-full bg-gold flex items-center justify-center hover:bg-maroon hover:text-white transition">
+                    <i data-feather="message-circle"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-maroon text-white py-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>&copy; 2025 Teens Church. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

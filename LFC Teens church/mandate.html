@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winners Teens Osimore – Liberation Mandate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#f5c542',
+                        maroon: '#800000',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(128, 0, 0, 0.9);
+        }
+
+        .nav-link:hover {
+            color: #f5c542;
+        }
+
+        .nav-link.active {
+            color: #f5c542;
+            border-bottom: 2px solid #f5c542;
+        }
+    </style>
+</head>
+
+<body class="font-inter bg-white text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-maroon to-maroon/90 text-white fixed w-full z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 md:px-12">
+
+            <!-- Logo + Text -->
+            <div class="flex items-center space-x-3">
+                <img src="assets/winners_logo-removebg-preview.png" alt="Winners Chapel Logo" class="h-10 w-auto">
+                <span class="text-2xl font-bold">
+                    <span class="text-gold">Teens</span> <span class="text-white">Church</span>
+                </span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="mandate.html" class="nav-link active">Our Mandate</a>
+                <a href="mission.html" class="nav-link">Our Mission</a>
+                <a href="books.html" class="nav-link">Books</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <i data-feather="menu"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section with Face + Half Body -->
+    <section class="relative h-[36rem] md:h-[40rem] flex items-center justify-center overflow-hidden">
+        <!-- Bishop Image -->
+        <img src="./assets/Bishop David Oyedepo shares Insights on Understanding the Covenant at Day 3 of TFOLC Word Explosion Conference 2018_.jpeg" alt="Bishop David Oyedepo"
+            class="absolute inset-0 w-full h-full object-cover object-top" />
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-black/80"></div>
+
+        <!-- Text -->
+        <div class="relative z-10 text-center text-white px-6">
+            <h1 class="text-4xl md:text-5xl font-bold text-gold drop-shadow-lg">The Liberation Mandate</h1>
+            <p class="mt-4 text-lg max-w-2xl mx-auto">
+                The divine vision that birthed Living Faith Church Worldwide.
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- Mandate Content -->
+    <section class="py-20 px-6 md:px-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-maroon relative inline-block">
+                The Mandate
+                <span class="block w-20 h-1 bg-gold mx-auto mt-3 rounded"></span>
+            </h2>
+
+            <!-- Styled blockquote -->
+            <blockquote
+                class="text-xl leading-relaxed text-gray-900 italic border-l-4 border-gold pl-6 py-6 bg-white shadow-lg rounded-lg">
+                “The hour has come to liberate the world from all oppressions of the devil through the preaching of the
+                Word
+                of Faith, and I am sending you to undertake this task.”
+            </blockquote>
+
+            <p class="mt-10 text-lg text-gray-700 leading-relaxed">
+                This divine mandate was delivered to God’s servant, <span class="font-semibold text-maroon">Bishop David
+                    Oyedepo</span>, on May 2nd, 1981,
+                marking the beginning of the Living Faith Church Worldwide (also known as Winners’ Chapel).
+                <br><br>
+                Since then, the church has remained committed to spreading the message of faith,
+                liberation, and victorious living in Christ across the globe.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-maroon py-12 px-4 md:px-8 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold">Winners Teens Osimore</h3>
+                    <p class="text-gray-200">
+                        Empowering teenagers with divine wisdom and knowledge for victorious living.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gold">Home</a></li>
+                        <li><a href="mandate.html" class="hover:text-gold">Our Mandate</a></li>
+                        <li><a href="mission.html" class="hover:text-gold">Our Mission</a></li>
+                        <li><a href="books.html" class="hover:text-gold">Books</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/lfcijebuodeteens?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            class="w-10 h-10 rounded-full bg-white text-maroon flex items-center justify-center hover:bg-gold hover:text-maroon transition">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white text-maroon flex items-center justify-center hover:bg-gold hover:text-maroon transition">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white text-maroon flex items-center justify-center hover:bg-gold hover:text-maroon transition">
+                            <i data-feather="youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-6 border-t border-gold/30 text-center text-gray-200">
+                <p>&copy; 2025 Winners Teens Osimore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+
+</body>
+
+</html>

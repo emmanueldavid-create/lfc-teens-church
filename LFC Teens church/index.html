@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winners Teens Osimore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#f5c542',
+                        maroon: '#800000',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(128, 0, 0, 0.85);
+        }
+
+        .nav-link:hover {
+            color: #f5c542;
+        }
+
+        .nav-link.active {
+            color: #f5c542;
+            border-bottom: 2px solid #f5c542;
+        }
+
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: white;
+            color: #800000;
+        }
+    </style>
+</head>
+
+<body class="font-inter bg-white text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-maroon to-maroon/90 text-white fixed w-full z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 md:px-12">
+
+            <!-- Logo + Text -->
+            <div class="flex items-center space-x-3">
+                <img src="assets/winners_logo-removebg-preview.png" alt="Winners Chapel Logo" class="h-10 w-auto">
+                <span class="text-2xl font-bold">
+                    <span class="text-gold">Teens</span> <span class="text-white">Church</span>
+                </span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="mandate.html" class="nav-link">Our Mandate</a>
+                <a href="mission.html" class="nav-link">Our Mission</a>
+                <a href="books.html" class="nav-link">Books</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu" class="hidden bg-maroon text-white px-6 py-4 space-y-4 md:hidden">
+                <a href="index.html" class="block hover:text-gold">Home</a>
+                <a href="about.html" class="block hover:text-gold">About</a>
+                <a href="books.html" class="block hover:text-gold">Books</a>
+                <a href="gallery.html" class="block hover:text-gold">Gallery</a>
+                <a href="contact.html" class="block hover:text-gold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slideshow Hero -->
+    <div class="slideshow-container">
+        <div class="slide active" style="background-image: url('./assets/lfc1_slideshow.jpg')"></div>
+        <div class="slide" style="background-image: url('./assets/lfc2.jpg')"></div>
+        <div class="slide" style="background-image: url('./assets/lfc3.jpg')"></div>
+
+        <div class="absolute inset-0 bg-maroon/40 flex items-center justify-center">
+            <div class="text-center px-4 max-w-4xl text-white">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Welcome to Winners Teens Osimore</h1>
+                <p class="text-xl mb-8">Empowering the next generation with faith, knowledge and divine direction</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="mandate.html"
+                        class="btn-primary bg-gold text-maroon font-semibold py-3 px-6 rounded-full">Our Mandate</a>
+                    <a href="mission.html"
+                        class="btn-primary bg-gold text-maroon font-semibold py-3 px-6 rounded-full">Our Mission</a>
+                    <a href="books.html"
+                        class="btn-primary bg-gold text-maroon font-semibold py-3 px-6 rounded-full">Books</a>
+                    <a href="contact.html"
+                        class="btn-primary bg-gold text-maroon font-semibold py-3 px-6 rounded-full">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Times -->
+    <section class="py-16 px-4 md:px-8 bg-maroon text-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gold">Our Service Times</h2>
+            <div class="w-24 h-1 bg-gold mx-auto mt-4 mb-12"></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white text-maroon p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">First Service</h3>
+                    <p>7:00 AM</p>
+                </div>
+                <div class="bg-white text-maroon p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">Second Service</h3>
+                    <p>9:15 AM</p>
+                </div>
+                <div class="bg-white text-maroon p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">Fellowship</h3>
+                    <p>5:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Sunday Programmes -->
+    <section class="py-16 px-4 md:px-8 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-maroon">Activity Sunday Programmes</h2>
+            <div class="w-24 h-1 bg-gold mx-auto mt-4 mb-12"></div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-maroon text-white p-6 rounded-lg hover:scale-105 transition">
+                    <i data-feather="book" class="w-10 h-10 text-gold mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Book Review</h3>
+                    <p>Interactive reviews of faith-based books.</p>
+                </div>
+                <div class="bg-maroon text-white p-6 rounded-lg hover:scale-105 transition">
+                    <i data-feather="message-square" class="w-10 h-10 text-gold mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Debate</h3>
+                    <p>Sharpening minds with healthy arguments.</p>
+                </div>
+                <div class="bg-maroon text-white p-6 rounded-lg hover:scale-105 transition">
+                    <i data-feather="help-circle" class="w-10 h-10 text-gold mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Quiz</h3>
+                    <p>Fun competitions testing Bible knowledge.</p>
+                </div>
+                <div class="bg-maroon text-white p-6 rounded-lg hover:scale-105 transition">
+                    <i data-feather="mic" class="w-10 h-10 text-gold mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Talk Show</h3>
+                    <p>Open discussions on life and faith.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="py-16 px-4 md:px-8 bg-gradient-to-b from-maroon to-maroon/90 text-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gold">Explore Our Ministry</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white text-maroon p-8 rounded-lg text-center shadow hover:scale-105 transition">
+                    <i data-feather="target" class="w-12 h-12 mx-auto mb-4 text-gold"></i>
+                    <h3 class="text-xl font-semibold mb-4">Liberation Mandate</h3>
+                    <p class="mb-6">Discover our divine calling and purpose as a ministry</p>
+                    <a href="mandate.html"
+                        class="btn-primary inline-block bg-gold text-maroon py-2 px-6 rounded-full">Learn More</a>
+                </div>
+                <div class="bg-white text-maroon p-8 rounded-lg text-center shadow hover:scale-105 transition">
+                    <i data-feather="book-open" class="w-12 h-12 mx-auto mb-4 text-gold"></i>
+                    <h3 class="text-xl font-semibold mb-4">Spiritual Resources</h3>
+                    <p class="mb-6">Access life-transforming books and teachings</p>
+                    <a href="books.html"
+                        class="btn-primary inline-block bg-gold text-maroon py-2 px-6 rounded-full">View Resources</a>
+                </div>
+                <div class="bg-white text-maroon p-8 rounded-lg text-center shadow hover:scale-105 transition">
+                    <i data-feather="users" class="w-12 h-12 mx-auto mb-4 text-gold"></i>
+                    <h3 class="text-xl font-semibold mb-4">Teen Community</h3>
+                    <p class="mb-6">Join our vibrant community of young believers</p>
+                    <a href="gallery.html"
+                        class="btn-primary inline-block bg-gold text-maroon py-2 px-6 rounded-full">See Gallery</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 px-4 md:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-maroon">What Teens Are Saying</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-maroon text-white p-8 rounded-lg">
+                    <p class="italic">"Winners Teens has helped me understand my identity in Christ and given me
+                        confidence to stand for my faith in school."</p>
+                </div>
+                <div class="bg-maroon text-white p-8 rounded-lg">
+                    <p class="italic">"The books and teachings have transformed my prayer life and helped me make better
+                        decisions about my future."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-maroon py-12 px-4 md:px-8 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold">Winners Teens Osimore</h3>
+                    <p>Empowering teenagers with divine wisdom and knowledge for victorious living.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gold">Home</a></li>
+                        <li><a href="mandate.html" class="hover:text-gold">Our Mandate</a></li>
+                        <li><a href="mission.html" class="hover:text-gold">Our Mission</a></li>
+                        <li><a href="books.html" class="hover:text-gold">Books</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/lfcijebuodeteens?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            class="w-10 h-10 rounded-full bg-white text-maroon flex items-center justify-center hover:bg-gold hover:text-maroon">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white text-maroon flex items-center justify-center hover:bg-gold hover:text-maroon">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white text-maroon flex items-center justify-center hover:bg-gold hover:text-maroon">
+                            <i data-feather="youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gold/30 text-center">
+                <p>&copy; 2025 Winners Teens Osimore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        function nextSlide() { showSlide(currentSlide + 1); }
+        setInterval(nextSlide, 5000);
+        feather.replace();
+
+        const menuBtn = document.querySelector("[data-feather='menu']").parentElement;
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        feather.replace();
+    </script>
+
+
+
+
+</body>
+
+</html>
